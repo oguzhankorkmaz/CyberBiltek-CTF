@@ -1,0 +1,349 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body > img.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+body > img.bg-logo {
+  position: absolute;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+@media (max-width: 585px) {
+  body > img.bg-logo {
+    width: 70%;
+    height: auto;
+  }
+}
+
+body .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(transparent));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 99;
+}
+
+@media (max-width: 1380px) {
+  body .sidebar {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1120px) {
+  body .sidebar {
+    width: 100px;
+  }
+}
+
+@media (max-width: 997px) {
+  body .sidebar {
+    left: -100px;
+  }
+  body .sidebar.open {
+    left: 0;
+  }
+}
+
+@media (max-height: 750px) {
+  body .sidebar {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+body .sidebar .logo {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  margin: 15px;
+  top: 0;
+}
+
+body .sidebar .logo img {
+  width: 100%;
+}
+
+body .sidebar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .sidebar nav #nav-active {
+  visibility: hidden;
+  display: none;
+}
+
+body .sidebar nav a {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  -webkit-box-shadow: 0 0 26px rgba(255, 255, 255, 0.06);
+          box-shadow: 0 0 26px rgba(255, 255, 255, 0.06);
+  padding: 10px;
+}
+
+@media (max-height: 750px) {
+  body .sidebar nav a {
+    margin: 5px;
+  }
+}
+
+body .sidebar nav a.cyberbiltek .img-cyber-link {
+  display: block;
+}
+
+body .sidebar nav a.cyberbiltek .img-cyber-link-active {
+  display: none;
+}
+
+body .sidebar nav a.cyberbiltek.active .img-cyber-link {
+  display: none;
+}
+
+body .sidebar nav a.cyberbiltek.active .img-cyber-link-active {
+  display: block;
+}
+
+body .sidebar nav a:hover {
+  background-color: #e6e6e6;
+}
+
+body .sidebar nav a:hover img.img-hov {
+  display: block;
+}
+
+body .sidebar nav a:hover img.img-nor {
+  display: none;
+}
+
+body .sidebar nav a.register-btn {
+  width: 75px;
+  height: 75px;
+  background-color: #e6e6e6;
+}
+
+@media (max-height: 750px) {
+  body .sidebar nav a.register-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+body .sidebar nav a.active, body .sidebar nav a:hover, body .sidebar nav a.register-btn {
+  background-color: #e6e6e6;
+}
+
+body .sidebar nav a.active svg path,
+body .sidebar nav a.active svg rect, body .sidebar nav a:hover svg path,
+body .sidebar nav a:hover svg rect, body .sidebar nav a.register-btn svg path,
+body .sidebar nav a.register-btn svg rect {
+  fill: black;
+}
+
+body .sidebar nav a svg path,
+body .sidebar nav a svg rect {
+  fill: #e6e6e6;
+}
+
+body .sidebar nav a img {
+  width: 100%;
+}
+
+body .sidebar nav a img.img-hov {
+  display: none;
+}
+
+body .sidebar nav a img.img-nor {
+  display: block;
+}
+
+body .sidebar .sidebar-toggle-btn {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  left: 110px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #e6e6e6;
+}
+
+@media (max-width: 997px) {
+  body .sidebar .sidebar-toggle-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+body.homepage main {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body.homepage main .container {
+  text-align: center;
+}
+
+body.homepage main .container .title {
+  font-size: 15rem;
+  font-family: banshee-std, sans-serif;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 997px) {
+  body.homepage main .container .title {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 520px) {
+  body.homepage main .container .title {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  body.homepage main .container .title {
+    font-size: 7rem;
+  }
+}
+
+body.homepage main .container .content {
+  display: block;
+}
+
+body main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  body main {
+    padding: 50px 20px;
+  }
+}
+
+body main .container {
+  width: 1000px;
+  height: auto;
+}
+
+@media (max-width: 1270px) {
+  body main .container {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1023px) {
+  body main .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  body main .container {
+    width: 100%;
+  }
+}
+
+body main .container .title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+body main .container .content {
+  width: 100%;
+  position: relative;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/{{cssName}}.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xpi6zwr.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="{{class}}">
+
+
+    <img src="img/bg.png" class="bg">
+    <img src="img/bg-logo.png" class="bg-logo">
+
+    {{>sidebar}}
+
+    <main>
+        <div class="container">
+            {{{body}}}
+        </div>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/history.js"></script>
+</body>
+
+</html>

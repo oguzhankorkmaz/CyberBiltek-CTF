@@ -1,0 +1,33 @@
+main .container .content table {
+  width: 100%;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  overflow: hidden;
+  border-spacing: 0;
+}
+
+main .container .content table thead {
+  background-color: #1c1c1c;
+}
+
+main .container .content table thead tr th {
+  padding: 15px 0;
+}
+
+main .container .content table tbody tr td {
+  padding: 10px 10px;
+  border-bottom: 1px solid #707070;
+}
+
+main .container .content table tbody tr td:last-child {
+  border-left: 1px solid #707070;
+}
+
+main .container .content table tr td:first-child() {
+  width: 70%;
+}
+
+main .container .content table tr td:last-child() {
+  width: 30%;
+}
+/*# sourceMappingURL=calender.css.map */

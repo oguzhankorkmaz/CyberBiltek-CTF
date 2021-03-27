@@ -1,0 +1,77 @@
+main {
+    .container {
+        .content {
+            display: flex;
+            flex-direction: column;
+            .ctftext {
+                width: 100%;
+                font-size: 1.2rem;
+                align-items: center;
+                display: flex;
+                @media (max-width: 700px) {
+                }
+                @media (max-width: 650px) {
+                    width: auto;
+                }
+                @media (max-width: 600px) {
+                }
+                @media (max-width: 500px) {
+                }
+            }
+
+            .ctfnotice {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 30px;
+
+                // @media (max-width: 650px) {
+                //     display: none;
+                // }
+
+                .ctfsquare {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100px;
+                    width: 250px;
+                    margin: 20px 0;
+
+                    .ctfhorizontal {
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: white;
+                        top: 24px;
+                    }
+
+                    .ctfcircle {
+                        position: relative;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: black;
+                        font-weight: 900;
+                        font-size: 20pt;
+                    }
+
+                    .ctftextarea {
+                        margin-top: 15px;
+                        text-align: center;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

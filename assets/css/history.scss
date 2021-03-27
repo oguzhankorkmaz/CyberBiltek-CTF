@@ -1,0 +1,130 @@
+main {
+    .container {
+        .title {
+            text-align: left;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+
+            @media (max-width: 1023px) {
+                flex-direction: column;
+            }
+
+            .history {
+                width: 55%;
+                font-size: 1.2rem;
+                position: relative;
+
+                @media (max-width: 1023px) {
+                    width: 100%;
+                }
+
+                & > div {
+                    display: none;
+                }
+
+                .active {
+                    display: block;
+                }
+
+                .histories-btn {
+                    bottom: 0;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    div {
+                        height: 50px;
+                        border-radius: 3px;
+                        background-color: rgba($color: #ffffff, $alpha: 0.3);
+                        margin: 0 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        padding: 10px;
+                        visibility: hidden;
+
+                        &.history-btn-1 {
+                            svg {
+                                margin-right: 22px;
+                            }
+                        }
+                        &.history-btn-2 {
+                            svg {
+                                margin-left: 22px;
+                            }
+                        }
+                        svg {
+                            height: 100%;
+                            fill: white;
+                            width: auto;
+                        }
+
+                        &.active {
+                            background-color: rgba($color: #000, $alpha: 0.3);
+                            visibility: inherit;
+                        }
+                    }
+                }
+            }
+
+            .history-img-area {
+                position: relative;
+                width: 45%;
+                right: 0;
+                display: flex;
+                align-items: center;
+                @media (max-width: 1023px) {
+                    width: 100%;
+                }
+                img {
+                    width: 111%;
+                    position: absolute;
+                    z-index: 1;
+                    left: 200px;
+                    top: -59px;
+                    transform: rotate(20deg);
+
+                    @media (max-width: 1270px) {
+                        top: 17px;
+                        transform: none;
+                    }
+
+                    @media (max-width: 1023px) {
+                        position: relative;
+                        width: 50%;
+                        top: 0;
+                        margin-top: 60px;
+                        left: 0;
+                    }
+
+                    &.active {
+                        left: 100px;
+                        z-index: 2;
+                        transform: rotate(-10deg);
+
+                        @media (max-width: 1023px) {
+                            left: 0;
+                            transform: none;
+                        }
+                    }
+
+                    &.history-img-1 {
+                        @media (max-width: 1023px) {
+                            transform: rotate(-10deg);
+                        }
+                    }
+                    &.history-img-2 {
+                        @media (max-width: 1023px) {
+                            transform: rotate(20deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

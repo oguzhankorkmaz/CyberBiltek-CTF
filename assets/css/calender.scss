@@ -1,0 +1,43 @@
+main{
+    .container{
+        .content{
+            table{
+                width: 100%;
+                border: 1px solid #707070;
+                border-radius: 10px;
+                overflow: hidden;
+                border-spacing: 0;
+                thead{
+                    background-color: #1c1c1c;
+                    tr{
+                        th{
+                            padding: 15px 0;
+                        }
+                    }
+                }
+
+                tbody{
+                    tr{
+                        td{
+                            padding: 10px 10px;
+                            border-bottom: 1px solid #707070;
+
+                            &:last-child{
+                                border-left: 1px solid #707070;
+                            }
+                        }
+                    }
+                }
+
+                tr{
+                    td:first-child(){
+                        width:70%
+                    }
+                    td:last-child(){
+                        width:30%
+                    }
+                }
+            }
+        }
+    }
+}
