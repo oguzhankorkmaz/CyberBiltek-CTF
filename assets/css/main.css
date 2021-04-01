@@ -82,6 +82,7 @@ body .sidebar {
 @media (max-width: 997px) {
   body .sidebar {
     left: -100px;
+    background: #181817d6;
   }
   body .sidebar.open {
     left: 0;
@@ -340,6 +341,10 @@ body main .container .title {
   font-weight: bold;
   font-style: normal;
   font-size: 3rem;
+}
+
+body main .container .title.center {
+  text-align: center;
 }
 
 body main .container .content {

@@ -1,53 +1,14 @@
-.cyberbiltek-main {
-    display: block;
-    width: 1000px;
-    min-height: 100vh;
-    margin: auto;
-    padding: 16vh 0 50px 0;
-    color: aliceblue;
-
-    @media (max-width: 1300px) {
-        width: 900px;
-    }
-
-    @media (max-width: 1200px) {
-        width: 800px;
-    }
-
-    @media (max-width: 850px) {
-        width: 700px;
-    }
-    @media (max-width: 750px) {
-        width: 650px;
-    }
+.cyb-text {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
     @media (max-width: 700px) {
-        width: 90%;
     }
-
-    .cyb-title {
-        padding: 20px 0;
-        font-size: 3rem;
-        font-weight: bold;
-        text-align: center;
-
-        @media (max-width: 750px) {
-            font-size: 2.5rem;
-        }
+    @media (max-width: 650px) {
+        width: auto;
     }
-
-    .cybtext {
-        width: 100%;
-        font-size: 1.2rem;
-        align-items: center;
-        display: flex;
-        @media (max-width: 700px) {
-        }
-        @media (max-width: 650px) {
-            width: auto;
-        }
-        @media (max-width: 600px) {
-        }
-        @media (max-width: 500px) {
-        }
+    @media (max-width: 600px) {
+    }
+    @media (max-width: 500px) {
     }
 }

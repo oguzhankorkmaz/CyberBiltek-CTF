@@ -1,68 +1,11 @@
-.cyberbiltek-main {
-  display: block;
-  width: 1000px;
-  min-height: 100vh;
-  margin: auto;
-  padding: 16vh 0 50px 0;
-  color: aliceblue;
-}
-
-@media (max-width: 1300px) {
-  .cyberbiltek-main {
-    width: 900px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .cyberbiltek-main {
-    width: 800px;
-  }
-}
-
-@media (max-width: 850px) {
-  .cyberbiltek-main {
-    width: 700px;
-  }
-}
-
-@media (max-width: 750px) {
-  .cyberbiltek-main {
-    width: 650px;
-  }
-}
-
-@media (max-width: 700px) {
-  .cyberbiltek-main {
-    width: 90%;
-  }
-}
-
-.cyberbiltek-main .cyb-title {
-  padding: 20px 0;
-  font-size: 3rem;
-  font-weight: bold;
+.cyb-text {
+  width: 100%;
+  font-size: 1.2rem;
   text-align: center;
 }
 
-@media (max-width: 750px) {
-  .cyberbiltek-main .cyb-title {
-    font-size: 2.5rem;
-  }
-}
-
-.cyberbiltek-main .cybtext {
-  width: 100%;
-  font-size: 1.2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media (max-width: 650px) {
-  .cyberbiltek-main .cybtext {
+  .cyb-text {
     width: auto;
   }
 }

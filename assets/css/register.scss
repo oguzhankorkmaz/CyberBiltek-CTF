@@ -9,7 +9,7 @@ main {
                 text-align: center;
                 color: white;
             }
-            
+
             .register-form {
                 max-width: 500px;
                 * {
@@ -18,7 +18,7 @@ main {
                     border-radius: 10px;
                     max-width: 500px;
                 }
-            
+
                 .form-features {
                     border: 1px solid #fff;
                     margin: 10px 0px;
@@ -28,16 +28,21 @@ main {
                         color: white;
                     }
                 }
-            
+
                 .register-buton {
                     cursor: pointer;
                     border: none;
                     margin: 10px 0;
-                    background-color: rgba($color: #000000, $alpha: 0.7);
+                    background-color: rgba($color: #000000, $alpha: 0.6);
+                    outline: unset;
+                    &:hover {
+                        background-color: rgba($color: #000000, $alpha: 0.75);
+                    }
+                    &:active {
+                        background-color: rgba($color: #000000, $alpha: 0.9);
+                    }
                 }
             }
-            
         }
     }
 }
-

@@ -54,6 +54,15 @@ main .container .content .register-form .register-buton {
   cursor: pointer;
   border: none;
   margin: 10px 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
+  outline: unset;
+}
+
+main .container .content .register-form .register-buton:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+main .container .content .register-form .register-buton:active {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 /*# sourceMappingURL=register.css.map */
