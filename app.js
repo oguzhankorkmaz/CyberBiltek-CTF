@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 4448;
 const hostname = "127.0.0.1";
 
-app.use(express.static("static","assets"));
+app.use("/static" ,express.static("assets"));
 
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
