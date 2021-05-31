@@ -39,6 +39,12 @@ main .container .content .ctfnotice {
   margin-top: 30px;
 }
 
+@media (max-width: 767px) {
+  main .container .content .ctfnotice {
+    margin-top: 15px;
+  }
+}
+
 main .container .content .ctfnotice .ctfsquare {
   position: relative;
   display: -webkit-box;
@@ -54,6 +60,13 @@ main .container .content .ctfnotice .ctfsquare {
   height: 100px;
   width: 250px;
   margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  main .container .content .ctfnotice .ctfsquare {
+    height: auto;
+    width: 165px;
+  }
 }
 
 main .container .content .ctfnotice .ctfsquare .ctfhorizontal {

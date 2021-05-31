@@ -73,9 +73,10 @@ main {
             }
 
             .history-img-area {
-                position: relative;
+                position: absolute;
                 width: 45%;
                 right: 0;
+                top: 0;
                 display: flex;
                 align-items: center;
                 @media (max-width: 1023px) {
@@ -90,7 +91,6 @@ main {
                     transform: rotate(20deg);
 
                     @media (max-width: 1270px) {
-                        top: 17px;
                         transform: none;
                     }
 

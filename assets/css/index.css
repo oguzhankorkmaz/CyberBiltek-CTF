@@ -1,31 +1,31 @@
-main .container .content .name {
+#home .container .content .name {
   font-size: 7rem;
   font-weight: bold;
 }
 
 @media (max-width: 997px) {
-  main .container .content .name {
+  #home .container .content .name {
     font-size: 4rem;
   }
 }
 
 @media (max-width: 520px) {
-  main .container .content .name {
+  #home .container .content .name {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 375px) {
-  main .container .content .name {
+  #home .container .content .name {
     font-size: 2.5rem;
   }
 }
 
-main .container .content .text {
+#home .container .content .text {
   font-size: 1.2rem;
 }
 
-main .container .content .text.center {
+#home .container .content .text.center {
   text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

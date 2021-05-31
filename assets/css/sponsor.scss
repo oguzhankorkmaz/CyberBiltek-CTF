@@ -1,24 +1,27 @@
-main{
-    .container{
-        .content{
+#sponsor {
+    .contianer {
+        text-align: center;
+        width: 1000px;
+        display: block;
+        margin: 0 auto;
+        .content {
             display: flex;
-            .s-box{
+            .s-box {
                 width: 100%;
                 min-height: 600px;
                 display: flex;
                 flex-direction: column;
 
-                &:nth-child(1){
-
+                &:nth-child(1) {
                     @media (max-width: 585px) {
                         order: 2;
-                        border-top: 1px solid #707070;  
+                        border-top: 1px solid #707070;
                         border-bottom: 1px solid #707070;
                     }
                 }
 
-                &:nth-child(2){
-                    border-right: 1px solid #707070;  
+                &:nth-child(2) {
+                    border-right: 1px solid #707070;
                     border-left: 1px solid #707070;
 
                     @media (max-width: 585px) {
@@ -28,22 +31,20 @@ main{
                     }
                 }
 
-                &:nth-child(3){
-
+                &:nth-child(3) {
                     @media (max-width: 585px) {
                         order: 3;
                     }
                 }
 
-
-                .s-box-img{
+                .s-box-img {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                 }
 
-                .s-box-content{
+                .s-box-content {
                     margin-top: 50px;
                     height: 100%;
                     width: 100%;

@@ -1,10 +1,17 @@
-main .container .content {
+#sponsor .contianer {
+  text-align: center;
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+#sponsor .contianer .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .container .content .s-box {
+#sponsor .contianer .content .s-box {
   width: 100%;
   min-height: 600px;
   display: -webkit-box;
@@ -17,7 +24,7 @@ main .container .content .s-box {
 }
 
 @media (max-width: 585px) {
-  main .container .content .s-box:nth-child(1) {
+  #sponsor .contianer .content .s-box:nth-child(1) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -26,13 +33,13 @@ main .container .content .s-box {
   }
 }
 
-main .container .content .s-box:nth-child(2) {
+#sponsor .contianer .content .s-box:nth-child(2) {
   border-right: 1px solid #707070;
   border-left: 1px solid #707070;
 }
 
 @media (max-width: 585px) {
-  main .container .content .s-box:nth-child(2) {
+  #sponsor .contianer .content .s-box:nth-child(2) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -42,14 +49,14 @@ main .container .content .s-box:nth-child(2) {
 }
 
 @media (max-width: 585px) {
-  main .container .content .s-box:nth-child(3) {
+  #sponsor .contianer .content .s-box:nth-child(3) {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
 }
 
-main .container .content .s-box .s-box-img {
+#sponsor .contianer .content .s-box .s-box-img {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +69,7 @@ main .container .content .s-box .s-box-img {
           justify-content: center;
 }
 
-main .container .content .s-box .s-box-content {
+#sponsor .contianer .content .s-box .s-box-content {
   margin-top: 50px;
   height: 100%;
   width: 100%;
@@ -82,7 +89,7 @@ main .container .content .s-box .s-box-content {
 }
 
 @media (max-width: 585px) {
-  main .container .content {
+  #sponsor .contianer .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

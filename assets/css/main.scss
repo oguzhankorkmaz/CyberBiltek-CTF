@@ -4,8 +4,9 @@
     color: white;
 }
 
-html{
-    overflow-x: hidden;
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,15 +21,15 @@ body {
         &.bg {
             width: 100%;
             height: 100%;
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             z-index: -2;
         }
 
         &.bg-logo {
-            position: absolute;
-            height: 80%;
+            position: fixed;
+            width: 480px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -209,77 +210,72 @@ body {
 
     &.homepage {
         main {
-            align-items: flex-end;
+            width: 100%;
+            min-height: 100vh;
+            padding: 0 50px;
+            position: relative;
+            @media (max-width: 767px) {
+                padding: 0 20px;
+            }
 
-            .container {
-                text-align: center;
 
-                .title {
-                    font-size: 15rem;
-                    font-family: banshee-std, sans-serif;
+            section {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+
+                .container {
                     text-align: center;
-                    margin: 0;
-                    margin-bottom: 0;
-
-                    @media (max-width: 997px) {
-                        font-size: 10rem;
-                    }
-                    @media (max-width: 520px) {
-                        font-size: 8rem;
-                    }
-                    @media (max-width: 375px) {
-                        font-size: 7rem;
-                    }
-                }
-
-                .content{
+                    width: 1000px;
                     display: block;
+                    margin: 0 auto;
+
+                    @media (max-width: 1300px) {
+                        width: 750px;
+                    }
+                    @media (max-width: 767px) {
+                        width: 500px;
+                    }
+
+                    .titlet {
+                        font-size: 15rem;
+                        font-family: banshee-std, sans-serif;
+                        text-align: center;
+                        margin: 0;
+                        margin-bottom: 0;
+
+                        @media (max-width: 997px) {
+                            font-size: 10rem;
+                        }
+                        @media (max-width: 520px) {
+                            font-size: 8rem;
+                        }
+                        @media (max-width: 375px) {
+                            font-size: 7rem;
+                        }
+                    }
+
+                    .title {
+                        margin: 0;
+                        margin-bottom: 30px;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-size: 3rem;
+                        &.center {
+                            text-align: center;
+                        }
+
+                        @media (max-width: 767px) {
+                            font-size: 1.8rem;
+                        }
+                    }
+
+                    .content {
+                        width: 100%;
+                        position: relative;
+                        display: block;
+                    }
                 }
-            }
-        }
-    }
-
-    main {
-        width: 100%;
-        min-height: 100vh;
-        padding: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        @media (max-width: 600px) {
-            padding: 50px 20px ;
-        }
-        .container {
-            width: 1000px;
-            height: auto;
-
-            @media (max-width: 1270px) {
-                width: 800px;
-            }
-
-            @media (max-width: 1023px) {
-                width: 700px;
-            }
-
-            @media (max-width: 600px) {
-                width: 100%;
-            }
-
-            .title {
-                margin: 0;
-                margin-bottom: 30px;
-                font-weight: bold;
-                font-style: normal;
-                font-size: 3rem;
-                &.center{
-                    text-align: center;
-                }
-            }
-
-            .content {
-                width: 100%;
-                position: relative;
             }
         }
     }
